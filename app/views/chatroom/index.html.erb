@@ -9,38 +9,12 @@
       <div class="content">
         <div class="ui small feed">
           <h4 class="ui header">MessageMe Chat</h4>
-          <div class="event">
-            <div class="content">
-              <div class="summary">
-                 <a>Elliot Fu</a>: Hello!
-              </div>
-            </div>
-          </div>
-          <div class="event">
-            <div class="content">
-              <div class="summary">
-                 <a>Stevie Feliciano</a> : Hey!
-              </div>
-            </div>
-          </div>
-          <div class="event">
-            <div class="content">
-              <div class="summary">
-                <a>Elliot Fu</a>: How are you?
-              </div>
-            </div>
-          </div>
-          <div class="event">
-            <div class="content">
-              <div class="summary">
-                 <a>Christian Rocha</a> hey guys..
-              </div>
-            </div>
-          </div>
+
+          <%= render @messages %>
+
+
         </div>
-
       </div>
-
       <div class="extra content">
         <form class="ui form">
           <div class="field">
