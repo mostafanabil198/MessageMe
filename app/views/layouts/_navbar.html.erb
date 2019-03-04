@@ -2,15 +2,15 @@
   <div class="item">
     <img src="assets/logo.png">
   </div>
-  <a class="item">Home</a>
+  <%= link_to 'Home', root_path, class:"item" %>
   <a class="item">Chatroom</a>
   <a class="item">Messages</a>
   <div class="right menu">
     <div class="ui dropdown item">
       Account <i class="dropdown icon"></i>
       <div class="menu">
-        <a class="item">Login</a>
-        <a class="item">Signup</a>
+        <%= link_to 'Login', login_path, class:"item" %>
+        <%= link_to 'SignUp', root_path, class:"item" %>
       </div>
     </div>
     <div class="item">
