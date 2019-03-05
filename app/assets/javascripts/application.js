@@ -32,6 +32,17 @@ submit_message = function (){
   });
 };
 
+signup = function(){
+  $('.ui.modal').modal('show');
+}
+
+function redirect()
+    {
+    var url = "/login";
+    window.location(url);
+    signup();
+    }
+
 $(document).on('turbolinks:load',function(){
   $('.ui.dropdown').dropdown();
   $('.message .close').on('click', function() {

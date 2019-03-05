@@ -11,7 +11,7 @@
       <div class="menu">
         <% if !logged_in? %>
         <%= link_to 'Login', login_path, class:"item" %>
-        <%= link_to 'SignUp', root_path, class:"item" %>
+        <%= link_to 'SignUp', login_path, class:"item" %>
         <% else %>
         <%= link_to 'Logout', logout_path, class:"item", method: "delete" %>
         <% end %>

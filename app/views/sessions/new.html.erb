@@ -25,7 +25,7 @@
       <% end %>
     </div>
     <div class="middle aligned column">
-      <div class="ui big button">
+      <div class="ui big button" onclick="signup();">
         <i class="signup icon"></i>
         Sign Up
       </div>
@@ -34,4 +34,31 @@
   <div class="ui vertical divider">
     Or
   </div>
+</div>
+
+<div class="ui modal">
+  <i class="close icon"></i>
+  <div class="header">
+    SignUp
+  </div>
+
+  <div class="content">
+    <%= form_for(:signup, html: {class: "ui form", role: "form"}, url: signup_path, method: 'post') do |f| %>
+      <div class="field">
+        <%= f.label :userName %>
+        <%= f.text_field :userName, placeholder: "Your userName" %>
+      </div>
+      <div class="field">
+        <%= f.label :userEmail %>
+        <%= f.email_field :userEmail, placeholder: "Your Email" %>
+      </div>
+      <div class="field">
+        <%= f.label :password %>
+        <%= f.password_field :password, placeholder: "Your password" %>
+      </div>
+        <%= f.button "signUp", class:"ui button"  %>
+    <% end %>
+
+  </div>
+
 </div>
